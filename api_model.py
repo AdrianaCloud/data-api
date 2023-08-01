@@ -155,7 +155,7 @@ def similitud():
 def actividades():
 
     hoy = date.today().strftime("%Y-%m-%d")
-    key_path = "key.json"
+    key_path = "keyBigQuery.json"
     credentials = service_account.Credentials.from_service_account_file(key_path)
     client = bigquery.Client(credentials=credentials, project=credentials.project_id,)
 
